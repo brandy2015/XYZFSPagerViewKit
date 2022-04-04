@@ -10,9 +10,9 @@ import FSPagerView
 
 class LocationCell: FSPagerViewCell {
     
-    var DataItem:[String] = []{
+    var DataItem:String = ""{
         didSet{
-            
+            setData()
         }
     }
     
@@ -24,5 +24,12 @@ class LocationCell: FSPagerViewCell {
         super.awakeFromNib()
         self.layer.cornerRadius = 20
         self.imageViewX?.layer.cornerRadius = 10
+        self.imageViewX?.contentMode = .scaleAspectFill
+        self.imageViewX?.clipsToBounds = true
+    }
+    
+    func setData(){
+        
+        self.imageViewX?.image = UIImage(named: DataItem)
     }
 }

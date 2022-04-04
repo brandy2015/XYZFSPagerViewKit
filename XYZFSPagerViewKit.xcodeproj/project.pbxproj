@@ -87,14 +87,22 @@
 				D6AB17EC27F9CCE500744185 /* AppDelegate.swift */,
 				D6AB17EE27F9CCE500744185 /* SceneDelegate.swift */,
 				D6AB17F027F9CCE500744185 /* ViewController.swift */,
-				D6CE163C27FA72F60026917D /* LocationCell.swift */,
-				D60A052327F9D0CB0021ED47 /* LocationCell.xib */,
+				D6CE163E27FA86E60026917D /* LocationCell */,
 				D6AB17F227F9CCE500744185 /* Main.storyboard */,
 				D6AB17F527F9CCE600744185 /* Assets.xcassets */,
 				D6AB17F727F9CCE600744185 /* LaunchScreen.storyboard */,
 				D6AB17FA27F9CCE600744185 /* Info.plist */,
 			);
 			path = XYZFSPagerViewKit;
+			sourceTree = "<group>";
+		};
+		D6CE163E27FA86E60026917D /* LocationCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6CE163C27FA72F60026917D /* LocationCell.swift */,
+				D60A052327F9D0CB0021ED47 /* LocationCell.xib */,
+			);
+			path = LocationCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
