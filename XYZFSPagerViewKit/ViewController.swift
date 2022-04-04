@@ -45,3 +45,11 @@ extension ViewController:FSPagerViewDataSource,FSPagerViewDelegate {
         pagerView.scrollToItem(at: index, animated: true)
     }
 }
+
+extension FSPagerView{
+    func SetDefault(defaultIndex:Int)  {
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+        self.scrollToItem(at: defaultIndex, animated: true)
+    }
+}
